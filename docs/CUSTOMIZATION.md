@@ -382,20 +382,73 @@ export default function Layout({ children }) {
 }
 ```
 
-### 2. Facebook Pixel
+### 2. Facebook Pixel (Meta Pixel)
+
+O Meta Pixel está configurado e pronto para rastrear eventos de conversão e remarketing.
+
+**Configuração**:
+
+1. Adicione seu Pixel ID no arquivo `.env.local`:
+```bash
+NEXT_PUBLIC_FB_PIXEL_ID=SEU_PIXEL_ID_AQUI
+```
+
+2. O pixel rastreará automaticamente:
+   - ✅ PageView (visualizações de página)
+   - ✅ AddToCart (adicionar ao carrinho)
+   - ✅ ViewContent (visualizar produto)
+   - ✅ InitiateCheckout (iniciar checkout)
+   - ✅ Purchase (compra realizada)
+   - ✅ Lead (formulário de contato)
+   - ✅ Search (busca de produtos)
+
+**Eventos Disponíveis** (`src/lib/fpixel.ts`):
 
 ```tsx
-// src/lib/fpixel.ts
-export const FB_PIXEL_ID = process.env.NEXT_PUBLIC_FB_PIXEL_ID
+import * as fbq from '@/lib/fpixel'
 
-export const pageview = () => {
-  window.fbq('track', 'PageView')
-}
+// Rastrear visualização de produto
+fbq.trackViewContent({
+  id: '123',
+  name: 'Blazer Premium',
+  price: 459.90,
+  category: 'Feminino'
+})
 
-export const event = (name: string, options = {}) => {
-  window.fbq('track', name, options)
-}
+// Rastrear adicionar ao carrinho
+fbq.trackAddToCart({
+  id: '123',
+  name: 'Blazer Premium',
+  price: 459.90,
+  quantity: 1
+})
+
+// Rastrear início de checkout
+fbq.trackInitiateCheckout(459.90, cartItems)
+
+// Rastrear compra
+fbq.trackPurchase('ORDER-123', 459.90, cartItems)
+
+// Rastrear lead (formulário)
+fbq.trackLead('Contact Form')
+
+// Rastrear busca
+fbq.trackSearch('vestido longo')
 ```
+
+**Como obter seu Pixel ID**:
+
+1. Acesse [Meta Business Suite](https://business.facebook.com/)
+2. Vá em **Gerenciador de Eventos**
+3. Selecione ou crie um Pixel
+4. Copie o ID do Pixel (ex: 1234567890123456)
+5. Cole no `.env.local`
+
+**Verificar se está funcionando**:
+
+1. Instale a extensão [Meta Pixel Helper](https://chrome.google.com/webstore/detail/meta-pixel-helper/fdgfkebogiimcoedlicjlajpkdmockpc)
+2. Acesse seu site local ou em produção
+3. A extensão mostrará os eventos sendo disparados
 
 ## 🔒 Segurança
 

@@ -3,6 +3,7 @@
 import { motion } from 'framer-motion'
 import { Star, ShoppingCart, Heart } from 'lucide-react'
 import { useState } from 'react'
+import * as fbq from '@/lib/fpixel'
 
 interface Product {
   id: number
@@ -175,6 +176,14 @@ const Products: React.FC = () => {
                   <motion.button
                     whileHover={{ scale: 1.1 }}
                     whileTap={{ scale: 0.9 }}
+                    onClick={() => {
+                      fbq.trackAddToCart({
+                        id: product.id.toString(),
+                        name: product.name,
+                        price: product.price,
+                        quantity: 1,
+                      })
+                    }}
                     className="bg-white text-black px-6 py-3 rounded-full font-semibold flex items-center space-x-2 transform translate-y-4 group-hover:translate-y-0 transition-transform duration-300"
                   >
                     <ShoppingCart className="w-5 h-5" />
