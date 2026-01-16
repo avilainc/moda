@@ -1,0 +1,26 @@
+# .gitattributes
+# Auto detect text files and perform LF normalization
+* text=auto
+
+# Source code
+*.tsx linguist-language=TypeScript
+*.ts linguist-language=TypeScript
+*.jsx linguist-language=JavaScript
+*.js linguist-language=JavaScript
+
+# Documents
+*.md text
+*.txt text
+
+# Graphics
+*.png binary
+*.jpg binary
+*.jpeg binary
+*.gif binary
+*.ico binary
+*.svg text
+
+# Configs
+*.json text
+*.yml text
+*.yaml text
