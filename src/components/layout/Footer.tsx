@@ -9,22 +9,22 @@ const Footer: React.FC = () => {
 
   const footerLinks = {
     company: [
-      { label: 'Sobre Nós', href: '/sobre' },
-      { label: 'Carreiras', href: '/carreiras' },
-      { label: 'Imprensa', href: '/imprensa' },
-      { label: 'Blog', href: '/blog' },
+      { label: 'Sobre Nós', href: '#' },
+      { label: 'Carreiras', href: '#' },
+      { label: 'Imprensa', href: '#' },
+      { label: 'Blog', href: '#' },
     ],
     help: [
-      { label: 'Atendimento', href: '/atendimento' },
-      { label: 'Trocas e Devoluções', href: '/trocas' },
-      { label: 'Entregas', href: '/entregas' },
-      { label: 'Perguntas Frequentes', href: '/faq' },
+      { label: 'Atendimento', href: '#' },
+      { label: 'Trocas e Devoluções', href: '#' },
+      { label: 'Entregas', href: '#' },
+      { label: 'Perguntas Frequentes', href: '#' },
     ],
     legal: [
-      { label: 'Política de Privacidade', href: '/privacidade' },
-      { label: 'Termos de Uso', href: '/termos' },
-      { label: 'Cookies', href: '/cookies' },
-      { label: 'Acessibilidade', href: '/acessibilidade' },
+      { label: 'Política de Privacidade', href: '#' },
+      { label: 'Termos de Uso', href: '#' },
+      { label: 'Cookies', href: '#' },
+      { label: 'Acessibilidade', href: '#' },
     ],
   }
 
