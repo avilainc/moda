@@ -65,13 +65,13 @@ const Hero: React.FC = () => {
             </h1>
 
             {/* Subtitle */}
-            <p className="text-xl md:text-2xl text-gray-600 mb-10 max-w-2xl mx-auto lg:mx-0">
+            <p className="text-xl md:text-2xl text-gray-700 mb-10 max-w-2xl mx-auto lg:mx-0">
               Menos retrabalho, mais foco no cliente. Sistema pronto pra moda varejista, com controle de tamanho, cores e fluxo de caixa integrado. 
               Easy4me
             </p>
 
             {/* Transformation */}
-            <p className="text-lg md:text-xl text-gray-700 mb-10 max-w-2xl mx-auto lg:mx-0 font-semibold">
+            <p className="text-lg md:text-xl text-gray-800 mb-10 max-w-2xl mx-auto lg:mx-0 font-semibold">
               Do caixa bagunçado ao controle total em dias. Veja resultados reais em menos tempo do que imagina.
             </p>
 
@@ -80,7 +80,7 @@ const Hero: React.FC = () => {
               <motion.div whileHover={{ scale: 1.05 }} whileTap={{ scale: 0.95 }}>
                 <Link
                   href="#trial"
-                  className="btn-primary group inline-flex items-center space-x-2"
+                  className="btn-primary group inline-flex items-center space-x-2 no-underline"
                 >
                   <span>Testar Grátis por 7 Dias</span>
                   <ArrowRight className="w-5 h-5 group-hover:translate-x-1 transition-transform" />
@@ -88,7 +88,7 @@ const Hero: React.FC = () => {
               </motion.div>
 
               <motion.div whileHover={{ scale: 1.05 }} whileTap={{ scale: 0.95 }}>
-                <Link href="#demo" className="btn-secondary">
+                <Link href="#demo" className="btn-secondary no-underline">
                   Ver Demonstração
                 </Link>
               </motion.div>
@@ -98,15 +98,15 @@ const Hero: React.FC = () => {
             <div className="mt-12 flex flex-wrap items-center justify-center lg:justify-start gap-8">
               <div className="text-center">
                 <p className="text-3xl font-bold text-gray-900">300k+</p>
-                <p className="text-sm text-gray-600">Notas Emitidas/Mês</p>
+                <p className="text-sm text-gray-700">Notas Emitidas/Mês</p>
               </div>
               <div className="text-center">
                 <p className="text-3xl font-bold text-gray-900">1.5k+</p>
-                <p className="text-sm text-gray-600">Lojas Atendidas</p>
+                <p className="text-sm text-gray-700">Lojas Atendidas</p>
               </div>
               <div className="text-center">
                 <p className="text-3xl font-bold text-gray-900">99.9%</p>
-                <p className="text-sm text-gray-600">Uptime</p>
+                <p className="text-sm text-gray-700">Uptime</p>
               </div>
             </div>
           </motion.div>

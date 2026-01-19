@@ -24,7 +24,7 @@ const Header: React.FC = () => {
       <div className="container-luxury">
         <div className="flex items-center justify-between h-20">
           {/* Logo */}
-          <Link href="/" className="flex items-center space-x-2">
+          <Link href="/" className="flex items-center space-x-2 no-underline">
             <motion.div
               whileHover={{ scale: 1.05 }}
               transition={{ type: 'spring', stiffness: 400 }}
@@ -41,7 +41,7 @@ const Header: React.FC = () => {
               <Link
                 key={item.href}
                 href={item.href}
-                className="text-sm font-medium text-gray-700 hover:text-black transition-colors relative group"
+                className="text-sm font-medium text-gray-800 hover:text-black transition-colors relative group no-underline"
               >
                 {item.label}
                 <span className="absolute -bottom-1 left-0 w-0 h-0.5 bg-black transition-all duration-300 group-hover:w-full" />

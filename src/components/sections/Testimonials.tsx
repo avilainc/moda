@@ -62,7 +62,7 @@ const Testimonials: React.FC = () => {
             O que nossos clientes{' '}
             <span className="text-gradient">estão dizendo</span>
           </h2>
-          <p className="text-xl text-gray-600 max-w-3xl mx-auto">
+          <p className="text-xl text-gray-700 max-w-3xl mx-auto">
             Histórias reais de quem transformou sua gestão e aumentou resultados
           </p>
         </motion.div>

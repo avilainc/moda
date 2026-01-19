@@ -62,7 +62,7 @@ const Features: React.FC = () => {
           <h2 className="text-4xl md:text-5xl font-display font-bold mb-6">
             Benefícios que <span className="text-gradient">convertem</span>
           </h2>
-          <p className="text-xl text-gray-600 max-w-3xl mx-auto">
+          <p className="text-xl text-gray-700 max-w-3xl mx-auto">
             Funcionalidades pensadas especialmente para o varejo de moda. Menos
             retrabalho, mais foco no cliente.
           </p>
@@ -91,7 +91,7 @@ const Features: React.FC = () => {
               <h3 className="text-xl font-bold mb-3 text-gray-900">
                 {feature.title}
               </h3>
-              <p className="text-gray-600 leading-relaxed">
+              <p className="text-gray-700 leading-relaxed">
                 {feature.description}
               </p>
 

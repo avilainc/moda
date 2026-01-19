@@ -49,6 +49,9 @@ const CallToAction: React.FC = () => {
           transition={{ duration: 0.8 }}
           className="max-w-4xl mx-auto text-center"
         >
+          {/* Heading - mantido oculto visualmente mas presente para hierarquia */}
+          <h2 className="sr-only">Comece sua transformação hoje</h2>
+          
           {/* Badge */}
           <motion.div
             initial={{ opacity: 0, scale: 0.9 }}
@@ -73,7 +76,7 @@ const CallToAction: React.FC = () => {
           </h2>
 
           {/* Subtitle */}
-          <p className="text-xl md:text-2xl text-gray-300 mb-10 max-w-2xl mx-auto">
+          <p className="text-xl md:text-2xl text-gray-200 mb-10 max-w-2xl mx-auto">
             Junte-se a mais de 1.500 lojas que já transformaram sua gestão com o
             Easy4me
           </p>
@@ -109,22 +112,22 @@ const CallToAction: React.FC = () => {
               <input
                 type="email"
                 placeholder="Digite seu melhor e-mail"
-                className="flex-1 px-6 py-4 rounded-full bg-white/10 backdrop-blur-sm border border-white/20 text-white placeholder-gray-400 focus:outline-none focus:ring-2 focus:ring-purple-400 transition-all"
+                className="flex-1 px-6 py-4 rounded-full bg-white/10 backdrop-blur-sm border border-white/20 text-white placeholder-gray-300 focus:outline-none focus:ring-2 focus:ring-purple-400 transition-all"
               />
               <motion.button
                 whileHover={{ scale: 1.05 }}
                 whileTap={{ scale: 0.95 }}
                 type="submit"
-                className="px-8 py-4 bg-white text-black font-semibold rounded-full hover:bg-gray-100 transition-colors flex items-center justify-center space-x-2 group"
+                className="px-8 py-4 bg-white text-black font-semibold rounded-full hover:bg-gray-100 transition-colors flex items-center justify-center space-x-2 group no-underline"
               >
                 <span>Começar Teste Grátis</span>
                 <ArrowRight className="w-5 h-5 group-hover:translate-x-1 transition-transform" />
               </motion.button>
             </form>
 
-            <p className="text-sm text-gray-400">
+            <p className="text-sm text-gray-300">
               Ao se inscrever, você concorda com nossos{' '}
-              <a href="/termos" className="underline hover:text-white">
+              <a href="/termos" className="underline hover:text-white decoration-gray-300 hover:decoration-white">
                 Termos de Uso
               </a>{' '}
               e{' '}

@@ -40,10 +40,10 @@ const Footer: React.FC = () => {
       <div className="border-b border-gray-800">
         <div className="container-luxury py-16">
           <div className="max-w-2xl mx-auto text-center">
-            <h3 className="text-3xl font-display font-bold mb-4">
+            <h2 className="text-3xl font-display font-bold mb-4">
               Fique por dentro das novidades
-            </h3>
-            <p className="text-gray-400 mb-8">
+            </h2>
+            <p className="text-gray-300 mb-8">
               Receba em primeira mão as últimas tendências e ofertas exclusivas
             </p>
             <form className="flex flex-col sm:flex-row gap-4 max-w-md mx-auto">
@@ -75,11 +75,11 @@ const Footer: React.FC = () => {
                 Easy<span className="text-purple-400">4me</span>
               </h2>
             </Link>
-            <p className="text-gray-400 mb-6 max-w-sm">
+            <p className="text-gray-300 mb-6 max-w-sm">
               Gestão que veste sua loja pra crescer de verdade. Controle estoque, vendas e financeiro em um só lugar.
             </p>
             <div className="space-y-3">
-              <div className="flex items-center space-x-3 text-gray-400">
+              <div className="flex items-center space-x-3 text-gray-300">
                 <Phone className="w-5 h-5" />
                 <span>(11) 99999-9999</span>
               </div>
@@ -96,13 +96,13 @@ const Footer: React.FC = () => {
 
           {/* Company Links */}
           <div>
-            <h4 className="font-semibold text-lg mb-4">Empresa</h4>
+            <h3 className="font-semibold text-lg mb-4">Empresa</h3>
             <ul className="space-y-3">
               {footerLinks.company.map((link) => (
                 <li key={link.href}>
                   <Link
                     href={link.href}
-                    className="text-gray-400 hover:text-white transition-colors"
+                    className="text-gray-300 hover:text-white transition-colors underline decoration-transparent hover:decoration-white"
                   >
                     {link.label}
                   </Link>
@@ -113,13 +113,13 @@ const Footer: React.FC = () => {
 
           {/* Help Links */}
           <div>
-            <h4 className="font-semibold text-lg mb-4">Ajuda</h4>
+            <h3 className="font-semibold text-lg mb-4">Ajuda</h3>
             <ul className="space-y-3">
               {footerLinks.help.map((link) => (
                 <li key={link.href}>
                   <Link
                     href={link.href}
-                    className="text-gray-400 hover:text-white transition-colors"
+                    className="text-gray-300 hover:text-white transition-colors underline decoration-transparent hover:decoration-white"
                   >
                     {link.label}
                   </Link>
@@ -130,13 +130,13 @@ const Footer: React.FC = () => {
 
           {/* Legal Links */}
           <div>
-            <h4 className="font-semibold text-lg mb-4">Legal</h4>
+            <h3 className="font-semibold text-lg mb-4">Legal</h3>
             <ul className="space-y-3">
               {footerLinks.legal.map((link) => (
                 <li key={link.href}>
                   <Link
                     href={link.href}
-                    className="text-gray-400 hover:text-white transition-colors"
+                    className="text-gray-300 hover:text-white transition-colors underline decoration-transparent hover:decoration-white"
                   >
                     {link.label}
                   </Link>
@@ -152,16 +152,16 @@ const Footer: React.FC = () => {
         <div className="container-luxury py-8">
           <div className="flex flex-col md:flex-row justify-between items-center space-y-4 md:space-y-0">
             <div className="text-center md:text-left">
-              <p className="text-gray-400 text-sm">
+              <p className="text-gray-300 text-sm">
                 © {currentYear} Easy4me. Todos os direitos reservados.
               </p>
-              <p className="text-gray-500 text-xs mt-2">
+              <p className="text-gray-400 text-xs mt-2">
                 Desenvolvido por{' '}
                 <a
                   href="https://grdcompany.com.br"
                   target="_blank"
                   rel="noopener noreferrer"
-                  className="text-purple-400 hover:text-purple-300 transition-colors"
+                  className="text-purple-400 hover:text-purple-300 transition-colors underline decoration-purple-400/50 hover:decoration-purple-300"
                 >
                   GRDCompany
                 </a>
@@ -176,7 +176,7 @@ const Footer: React.FC = () => {
                   rel="noopener noreferrer"
                   whileHover={{ scale: 1.2 }}
                   whileTap={{ scale: 0.9 }}
-                  className="text-gray-400 hover:text-white transition-colors"
+                  className="text-gray-300 hover:text-white transition-colors no-underline"
                   aria-label={social.label}
                 >
                   <social.icon className="w-5 h-5" />
